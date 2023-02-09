@@ -182,6 +182,8 @@ footer a:nth-child(3):hover svg path {
 
 .background-image {
   position: fixed;
+  animation: rotate 30s infinite alternate-reverse ease-in-out;
+  z-index: -1;
 }
 
 .background-image:nth-child(1) {
@@ -196,4 +198,13 @@ footer a:nth-child(3):hover svg path {
 .background-image:nth-child(3) {
   top: -150px;
   right: -150px;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
