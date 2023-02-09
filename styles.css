@@ -5,18 +5,6 @@
 }
 
 :root.dark {
-  --background: #f1f2f5;
-  --font-color: #08070b;
-  --font-color-secondary: #686868;
-  --bg-toggle: #d0d0d0;
-  --bg-circle-toggle: linear-gradient(180deg, #be6cff 0%, #8f00ff 100%);
-
-  --linkedin: #0e76a8;
-  --github: #08070b;
-  --instagram: #cb2770;
-}
-
-:root {
   --background: #08070b;
   --font-color: #f1f2f5;
   --font-color-secondary: #989999;
@@ -25,6 +13,18 @@
 
   --linkedin: #0e76a8;
   --github: #f1f2f5;
+  --instagram: #cb2770;
+}
+
+:root {
+  --background: #f1f2f5;
+  --font-color: #08070b;
+  --font-color-secondary: #686868;
+  --bg-toggle: #d0d0d0;
+  --bg-circle-toggle: linear-gradient(180deg, #be6cff 0%, #8f00ff 100%);
+
+  --linkedin: #0e76a8;
+  --github: #08070b;
   --instagram: #cb2770;
 }
 
