@@ -14,7 +14,6 @@
   --linkedin: #0e76a8;
   --github: #08070b;
   --instagram: #cb2770;
-
 }
 
 :root {
@@ -27,7 +26,6 @@
   --linkedin: #0e76a8;
   --github: #f1f2f5;
   --instagram: #cb2770;
-
 }
 
 body {
@@ -35,10 +33,13 @@ body {
   height: 100vh;
   background-color: var(--background);
   overflow: hidden;
-
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
 
+.container {
+  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
@@ -103,13 +104,13 @@ header {
   position: absolute;
   top: 3px;
   left: 3px;
-  
+
   transition: 0.5s;
 }
 
 #toggle-theme .circle.active {
   top: 3px;
-  left: calc(65px - 25px - 3px) ;
+  left: calc(65px - 25px - 3px);
 }
 
 main {
@@ -177,4 +178,22 @@ footer a:nth-child(2):hover svg path {
 }
 footer a:nth-child(3):hover svg path {
   stroke: var(--instagram);
+}
+
+.background-image {
+  position: absolute;
+}
+
+.background-image:nth-child(1) {
+  bottom: -150px;
+  left: -150px;
+}
+
+.background-image:nth-child(2) {
+  bottom: -150px;
+  right: -150px;
+}
+.background-image:nth-child(3) {
+  top: -150px;
+  right: -150px;
 }
