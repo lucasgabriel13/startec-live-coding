@@ -2,7 +2,6 @@ const toggleTheme = document.getElementById('toggle-theme');
 const circleToggleTheme = document.querySelector('#toggle-theme .circle');
 const html = document.querySelector('html');
 
-
 function onLoadDocument() {
   const theme = localStorage.getItem('@startec-portfolio:theme');
 
@@ -27,7 +26,6 @@ toggleTheme.addEventListener('click', function () {
   }
 
 });
-
 
 ScrollReveal().reveal('header', {
   duration: 1000,
