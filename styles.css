@@ -181,7 +181,7 @@ footer a:nth-child(3):hover svg path {
 }
 
 .background-image {
-  position: absolute;
+  position: fixed;
 }
 
 .background-image:nth-child(1) {
