@@ -6,3 +6,16 @@ toggleTheme.addEventListener('click', function () {
   circleToggleTheme.classList.toggle('active');
   html.classList.toggle('dark');
 });
+
+
+
+ScrollReveal().reveal('header', {
+  duration: 1000,
+  distance: '-50px',
+});
+
+ScrollReveal().reveal('main', {
+  duration: 1300,
+  distance: '1000px',
+  origin: 'left'
+});
