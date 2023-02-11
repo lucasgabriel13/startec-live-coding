@@ -238,13 +238,25 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 30px;
-  padding-right: 45px;
-  padding-bottom: 30px;
+  padding: 30px 45px;
 }
 
-footer a {
+footer > span {
+  color: var(--font-color);
+  font-weight: 300;
+}
+
+footer .social-media-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 30px 45px;
+}
+
+footer .social-media-group a {
   color: var(--font-color);
   text-decoration: none;
   display: flex;
@@ -252,17 +264,17 @@ footer a {
   gap: 10px;
 }
 
-footer a svg path {
+footer .social-media-group a svg path {
   transition: 0.4s;
 }
 
-footer a:nth-child(1):hover svg path {
+footer .social-media-group a:nth-child(1):hover svg path {
   fill: var(--linkedin);
 }
 
-footer a:nth-child(2):hover svg path {
+footer .social-media-group a:nth-child(2):hover svg path {
   stroke: var(--github);
 }
-footer a:nth-child(3):hover svg path {
+footer .social-media-group a:nth-child(3):hover svg path {
   stroke: var(--instagram);
 }
