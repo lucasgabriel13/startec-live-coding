@@ -27,13 +27,12 @@ toggleTheme.addEventListener('click', function () {
 
 });
 
-ScrollReveal().reveal('header', {
-  duration: 1000,
-  distance: '-50px',
+const scrollReveal = ScrollReveal({
+  distance: '50px',
+  origin: 'top',
+  duration: 700,
 });
 
-ScrollReveal().reveal('main', {
-  duration: 1300,
-  distance: '1000px',
-  origin: 'left'
-});
+scrollReveal.reveal('header');
+scrollReveal.reveal('.main-content');
+scrollReveal.reveal('#about');

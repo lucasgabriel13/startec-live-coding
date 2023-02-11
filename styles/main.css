@@ -28,20 +28,22 @@
   --instagram: #cb2770;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   background-color: var(--background);
-  overflow: hidden;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
+/* ---------------------- CONTAINER ---------------------- */
+
+/* ---------------------- HEADER ---------------------- */
 
 header {
   display: flex;
@@ -113,14 +115,23 @@ header {
   left: calc(65px - 25px - 3px);
 }
 
+/* ---------------------- MAIN ---------------------- */
+
 main {
   width: 100%;
-  max-width: 1360px;
-  margin: 250px auto 0;
-  padding-left: 240px;
+  height: 100vh;
+  position: relative;
 }
 
-main > h1 {
+main .main-content {
+  width: 100%;
+  max-width: 1360px;
+  padding-top: 250px;
+  padding-left: 140px;
+  margin: 0 auto;
+}
+
+main .main-content h1 {
   background: linear-gradient(270deg, #ffffff 0%, #8f00ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -129,31 +140,107 @@ main > h1 {
   font-weight: 700;
 }
 
-main > h2 {
+main .main-content h2 {
   font-size: 24px;
   font-weight: 300;
   color: var(--font-color);
   margin-top: 8px;
 }
 
-main > p {
+main .main-content p {
   font-size: 16px;
   font-weight: 300;
   color: var(--font-color-secondary);
   margin-top: 8px;
 }
 
+/* ---------------------- BACKGROUND IMAGES ---------------------- */
+
+main .background-image {
+  position: absolute;
+  animation: rotate 30s infinite alternate-reverse ease-in-out;
+  z-index: -1;
+}
+
+main .background-image:nth-child(2) {
+  bottom: -9.375rem;
+  left: -150px;
+}
+
+main .background-image:nth-child(3) {
+  bottom: -150px;
+  right: -150px;
+}
+main .background-image:nth-child(4) {
+  top: -200px;
+  right: -150px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------------------- ABOUT ---------------------- */
+
+#about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 115px;
+  padding-top: 100px;
+}
+
+#about .info-profile {
+  width: 100%;
+  max-width: 640px;
+}
+
+#about .info-profile h1 {
+  font-size: 40px;
+  color: var(--font-color);
+  margin-bottom: 36px;
+}
+
+#about .info-profile h1 > span {
+  display: inline-block;
+  animation: hand 0.5s linear infinite alternate-reverse;
+}
+
+#about .info-profile p {
+  font-size: 24px;
+  color: var(--font-color);
+  font-weight: 300;
+}
+
+#about .info-profile p + p {
+  margin-top: 45px;
+}
+
+@keyframes hand {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
 footer {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: absolute;
+  justify-content: flex-end;
   gap: 30px;
-
-  left: 0;
-  bottom: 30px;
-
+  padding-right: 45px;
   padding-bottom: 30px;
 }
 
@@ -178,33 +265,4 @@ footer a:nth-child(2):hover svg path {
 }
 footer a:nth-child(3):hover svg path {
   stroke: var(--instagram);
-}
-
-.background-image {
-  position: fixed;
-  animation: rotate 30s infinite alternate-reverse ease-in-out;
-  z-index: -1;
-}
-
-.background-image:nth-child(1) {
-  bottom: -150px;
-  left: -150px;
-}
-
-.background-image:nth-child(2) {
-  bottom: -150px;
-  right: -150px;
-}
-.background-image:nth-child(3) {
-  top: -150px;
-  right: -150px;
-}
-
-@keyframes rotate {
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
 }
