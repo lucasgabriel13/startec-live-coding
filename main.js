@@ -22,7 +22,7 @@ toggleTheme.addEventListener('click', function () {
   if (html.classList.contains('dark')) {
     localStorage.setItem('@startec-portfolio:theme', 'dark');
   } else {
-    localStorage.removeItem('@startec-portfolio:theme');
+    localStorage.setItem('@startec-portfolio:theme', 'light');
   }
 
 });

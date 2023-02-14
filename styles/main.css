@@ -34,14 +34,11 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
   background-color: var(--background);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   overflow-x: hidden;
 }
-
-/* ---------------------- CONTAINER ---------------------- */
 
 /* ---------------------- HEADER ---------------------- */
 
@@ -202,15 +199,15 @@ main .background-image:nth-child(4) {
   max-width: 640px;
 }
 
-#about .info-profile h1 {
+#about .info-profile h2 {
   font-size: 40px;
   color: var(--font-color);
   margin-bottom: 36px;
 }
 
-#about .info-profile h1 > span {
+#about .info-profile h2 > span {
   display: inline-block;
-  animation: hand 0.5s linear infinite alternate-reverse;
+  animation: hand 2.3s linear infinite alternate-reverse;
 }
 
 #about .info-profile p {
@@ -227,8 +224,23 @@ main .background-image:nth-child(4) {
   0% {
     transform: rotate(0deg);
   }
+  10% {
+    transform: rotate(8deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(8deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
   100% {
-    transform: rotate(45deg);
+    transform: rotate(0deg);
   }
 }
 
