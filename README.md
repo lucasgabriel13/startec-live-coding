@@ -1,4 +1,5 @@
 # Startec Hub Living Code
+![Banner_email2](https://user-images.githubusercontent.com/44211093/219382353-10aec1e6-050b-47cf-88b0-bcc833e97dbd.png)
 
 ## 💻 O projeto
 Esse projeto foi desenvolvido durante o Living Code na Comunidade Startec Hub, para mostrar a importância e os benefícios de se ter um portfólio, além de mostrar
