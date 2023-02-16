@@ -19,6 +19,7 @@ Aqui estão alguns desafios que irão levar esse seu portfólio para outro níve
 - [ ] Alterar as cores do projeto
 - [ ] Adicionar uma `section` mostrando os principais projetos desenvolvidos por você
 - [ ] Adicionar uma `section` com os seus contatos
+- [ ] Deixar o projeto responsivo
 - [ ] Fazer um post no LinkedIn mostrando o seu portfólio marcando eu e a Startec 💙
 
 ---
